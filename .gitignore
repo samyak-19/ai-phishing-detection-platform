@@ -1,0 +1,19 @@
+node_modules/
+
+.env
+.env.*
+!.env.example
+
+dist/
+build/
+.next/
+
+
+coverage/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
