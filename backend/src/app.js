@@ -1,9 +1,12 @@
 const express = require("express");
+const healthRoutes = require("./routes/health.routes");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
+
+app.use("/api", healthRoutes);
 
 app.get("/", (req, res) => {
   res.json({
